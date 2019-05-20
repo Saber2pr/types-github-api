@@ -9,8 +9,8 @@
   "author": "saber2pr",
   "license": "ISC",
   "files": [
-    "lib/core/*",
-    "lib/index.*"
+    "src/core/*",
+    "src/index.*"
   ],
   "main": "./lib/index",
   "keywords": [
