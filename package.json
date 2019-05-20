@@ -1,0 +1,21 @@
+{
+  "name": "@saber2pr/types-github-api",
+  "version": "0.0.1",
+  "description": "> types-github-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saber2pr/types-github-api.git"
+  },
+  "author": "saber2pr",
+  "license": "ISC",
+  "files": [
+    "lib/core/*",
+    "lib/index.*"
+  ],
+  "main": "./lib/index",
+  "keywords": [
+    "github",
+    "types",
+    "typescript"
+  ]
+}
