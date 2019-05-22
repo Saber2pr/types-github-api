@@ -1,6 +1,6 @@
 {
   "name": "@saber2pr/types-github-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "> types-github-api",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "src/core/*",
     "src/index.*"
   ],
-  "main": "./lib/index",
+  "main": "./src/index",
   "keywords": [
     "github",
     "types",
