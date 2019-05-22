@@ -1,4 +1,4 @@
-import { User ,Repository, Repositorys} from '..'
+import { User, Repository, Repositorys } from '..'
 
 let user: User
 

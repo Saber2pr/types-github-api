@@ -1,8 +1,8 @@
 /*
  * @Author: saber2pr 
  * @Date: 2019-05-20 23:10:45 
- * @Last Modified by:   saber2pr 
- * @Last Modified time: 2019-05-20 23:10:45 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-05-22 16:49:55
  */
 export type Repositorys = Array<Repository>
 
