@@ -2,8 +2,10 @@
  * @Author: saber2pr
  * @Date: 2019-05-24 11:22:13
  * @Last Modified by: saber2pr
- * @Last Modified time: 2019-05-24 11:23:29
+ * @Last Modified time: 2019-05-24 13:19:10
  */
+export type Events = Array<Event>
+
 export interface Event {
   id: string
   type: string
@@ -25,7 +27,7 @@ export interface Event {
   }
   public: boolean
   created_at: string
-  org?: {
+  org: {
     id: number
     login: string
     gravatar_id: string
@@ -33,5 +35,3 @@ export interface Event {
     avatar_url: string
   }
 }
-
-export type Events = Array<Event>

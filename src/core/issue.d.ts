@@ -1,9 +1,11 @@
 /*
  * @Author: saber2pr
  * @Date: 2019-05-22 16:57:38
- * @Last Modified by:   saber2pr
- * @Last Modified time: 2019-05-22 16:57:38
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-05-24 13:19:24
  */
+export type Issues = Array<Issue>
+
 export interface Issue {
   url: string
   repository_url: string
@@ -35,11 +37,11 @@ export interface Issue {
     type: string
     site_admin: false
   }
-  labels: []
+  labels: any[]
   state: string
   locked: false
   assignee: any
-  assignees: []
+  assignees: any[]
   milestone: any
   comments: number
   created_at: string
@@ -48,5 +50,3 @@ export interface Issue {
   author_association: string
   body: string
 }
-
-export type Issues = Array<Issue>

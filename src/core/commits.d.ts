@@ -2,7 +2,7 @@
  * @Author: saber2pr
  * @Date: 2019-05-22 16:50:10
  * @Last Modified by: saber2pr
- * @Last Modified time: 2019-05-22 16:53:05
+ * @Last Modified time: 2019-05-24 13:18:45
  */
 export interface Commit {
   sha: string
@@ -75,54 +75,24 @@ export interface Commit {
     type: string
     site_admin: false
   }
-  parents: [
-    {
-      sha: string
-      url: string
-      html_url: string
-    }
-  ]
-  stats?: {
+  parents: Array<Commit>
+  stats: {
     total: number
     additions: number
     deletions: number
   }
-  files?: [
-    {
-      sha: string
-      filename: string
-      status: string
-      additions: number
-      deletions: number
-      changes: number
-      blob_url: string
-      raw_url: string
-      contents_url: string
-      patch: string
-    },
-    {
-      sha: string
-      filename: string
-      status: string
-      additions: number
-      deletions: number
-      changes: number
-      blob_url: string
-      raw_url: string
-      contents_url: string
-      patch: string
-    },
-    {
-      sha: string
-      filename: string
-      status: string
-      additions: number
-      deletions: number
-      changes: number
-      blob_url: string
-      raw_url: string
-      contents_url: string
-      patch: string
-    }
-  ]
+  files: Array<File>
+}
+
+export interface File {
+  sha: string
+  filename: string
+  status: string
+  additions: number
+  deletions: number
+  changes: number
+  blob_url: string
+  raw_url: string
+  contents_url: string
+  patch: string
 }
