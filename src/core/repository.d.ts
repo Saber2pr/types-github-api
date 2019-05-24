@@ -4,7 +4,7 @@
  * @Last Modified by: saber2pr
  * @Last Modified time: 2019-05-24 13:15:27
  */
-export type Repositorys = Array<Repository>
+export type Repositories = Array<Repository>
 
 export interface Repository {
   id: number
