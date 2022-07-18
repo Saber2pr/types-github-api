@@ -32,6 +32,7 @@ export interface User {
   email: string | null
   hireable: boolean | null
   bio: string | null
+  twitter_username: string | null
   public_repos: number
   public_gists: number
   followers: number
