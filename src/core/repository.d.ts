@@ -4,7 +4,34 @@
  * @Last Modified by: saber2pr
  * @Last Modified time: 2019-05-24 13:15:27
  */
-export type Repositories = Array<Repository>
+export interface Owner {
+  login: string
+  id: number
+  node_id: string
+  avatar_url: string
+  gravatar_id: string
+  url: string
+  html_url: string
+  followers_url: string
+  following_url: string
+  gists_url: string
+  starred_url: string
+  subscriptions_url: string
+  organizations_url: string
+  repos_url: string
+  events_url: string
+  received_events_url: string
+  type: "User" | "Organization"
+  site_admin: boolean
+}
+
+export interface Permissions {
+  admin: boolean
+  maintain: boolean
+  push: boolean
+  triage: boolean
+  pull: boolean
+}
 
 export interface Repository {
   id: number
@@ -14,7 +41,7 @@ export interface Repository {
   private: boolean
   owner: Owner
   html_url: string
-  description: string
+  description: string | null
   fork: boolean
   url: string
   forks_url: string
@@ -64,7 +91,7 @@ export interface Repository {
   size: number
   stargazers_count: number
   watchers_count: number
-  language: string
+  language: string | null
   has_issues: boolean
   has_projects: boolean
   has_downloads: boolean
@@ -73,6 +100,11 @@ export interface Repository {
   forks_count: number
   mirror_url: any
   archived: boolean
+  allow_forking: boolean
+  web_commit_signoff_required: boolean
+  topics: string[]
+  visibility: string
+  is_template: boolean
   disabled: boolean
   open_issues_count: number
   license: any
@@ -80,25 +112,7 @@ export interface Repository {
   open_issues: number
   watchers: number
   default_branch: string
+  permissions: Permissions
 }
 
-export interface Owner {
-  login: string
-  id: number
-  node_id: string
-  avatar_url: string
-  gravatar_id: string
-  url: string
-  html_url: string
-  followers_url: string
-  following_url: string
-  gists_url: string
-  starred_url: string
-  subscriptions_url: string
-  organizations_url: string
-  repos_url: string
-  events_url: string
-  received_events_url: string
-  type: string
-  site_admin: boolean
-}
+export type Repositories = Array<Repository>
